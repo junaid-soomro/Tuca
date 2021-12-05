@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="tuca.project.com.tuca.Patient.PatientDashboard"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/patient_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/logo" />
+
+        <ImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/unilogo" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/book_apointment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/SpringGreen"
+        android:text="Book Appointment"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/my_appointments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_name" />
+
+    <Button
+        android:id="@+id/my_appointments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/SteelBlue"
+        android:text="My appointments"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_history"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_apointment" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/book_apointment"
+        app:layout_constraintEnd_toStartOf="@+id/patient_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/welcome" />
+
+    <TextView
+        android:id="@+id/patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="75dp"
+        android:text="TextView"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/book_apointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_history">
+
+        <ImageView
+
+            android:id="@+id/logout_patient"
+            android:layout_width="70dp"
+            android:layout_height="76dp"
+            app:srcCompat="@drawable/logout" />
+
+        <ImageView
+            android:id="@+id/edit_profile_patient"
+            android:layout_width="70dp"
+            android:layout_height="76dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/setting" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/view_history"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/Turquoise"
+        android:text="View History"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_appointments" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tuca.project.com.tuca.Welcome"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/logo"/>
+        <ImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/unilogo"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout><![CDATA[
+
+
+    TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To"
+        android:textSize="17dp"
+        android:textColor="@color/Tomato"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+
+        ]]>
+
+    <TextView
+            android:id="@+id/register"
+            android:layout_marginTop="150dp"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:background="@color/SteelBlue"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:text="Register"
+            android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:background="@color/SteelBlue"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:text="Log On"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/call_emergency"
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:background="@color/SteelBlue"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:text="Emergency Call"
+        android:textSize="17dp"/>
+
+</LinearLayout>
